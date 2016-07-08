@@ -11,6 +11,7 @@
 		DD1CBDA71D2F7F6300203E09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1CBDA61D2F7F6300203E09 /* AppDelegate.m */; };
 		DD1CBDAD1D2F7F6300203E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1CBDAB1D2F7F6300203E09 /* Main.storyboard */; };
 		DD1CBDAF1D2F7F6300203E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD1CBDAE1D2F7F6300203E09 /* Assets.xcassets */; };
+		DD1CBDBB1D2F8BFB00203E09 /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1CBDBA1D2F8BFB00203E09 /* XMGTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		DD1CBDAC1D2F7F6300203E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD1CBDAE1D2F7F6300203E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD1CBDB31D2F7F6300203E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1CBDB91D2F8BFB00203E09 /* XMGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabBarController.h; sourceTree = "<group>"; };
+		DD1CBDBA1D2F8BFB00203E09 /* XMGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,8 @@
 			children = (
 				DD1CBDA51D2F7F6300203E09 /* AppDelegate.h */,
 				DD1CBDA61D2F7F6300203E09 /* AppDelegate.m */,
+				DD1CBDB91D2F8BFB00203E09 /* XMGTabBarController.h */,
+				DD1CBDBA1D2F8BFB00203E09 /* XMGTabBarController.m */,
 				DD1CBDA21D2F7F6300203E09 /* Supporting Files */,
 			);
 			path = "01-百思不得姐";
@@ -97,6 +102,7 @@
 		DD1CBD971D2F7F6300203E09 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XMG;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Tim Lee";
 				TargetAttributes = {
@@ -141,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD1CBDBB1D2F8BFB00203E09 /* XMGTabBarController.m in Sources */,
 				DD1CBDA71D2F7F6300203E09 /* AppDelegate.m in Sources */,
 				DD1CBDA41D2F7F6300203E09 /* main.m in Sources */,
 			);
