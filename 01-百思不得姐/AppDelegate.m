@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -21,10 +21,43 @@
     self.window.frame = [UIScreen mainScreen].bounds;
     
     // 设置窗口的根控制器
-    self.window.rootViewController=[[UIViewController alloc]init];
-    //    XMGTabBarController *tabBarController = [[XMGTabBarController alloc] init];
-    //    tabBarController.delegate = self;
-//    self.window.rootViewController = [[XMGTabBarController alloc] init];
+    UITabBarController *tabBarController=[[UITabBarController  alloc]init];
+
+//   添加子控制器
+    UIViewController *vc01 = [[UIViewController alloc]init];
+    vc01.tabBarItem.title=@"精华";
+    vc01.tabBarItem.image=[UIImage imageNamed:@"tabBar_essence_icon"];
+    vc01.tabBarItem.selectedImage=[UIImage imageNamed:@"tabBar_essence_click_icon"];
+    vc01.view.backgroundColor=[UIColor grayColor];
+//    [vc01.tabBarController addChildViewController:vc01]; //语句没执行，01的属性没有赋值
+     [tabBarController addChildViewController:vc01];
+    
+    UIViewController *vc02 = [[UIViewController alloc]init];
+    vc02.tabBarItem.title=@"新帖";
+    vc02.tabBarItem.image=[UIImage imageNamed:@"tabBar_new_icon"];
+    vc02.tabBarItem.selectedImage=[UIImage imageNamed:@"tabBar_new_click_icon"];
+    vc02.view.backgroundColor=[UIColor redColor];
+//    [vc02.tabBarController addChildViewController:vc02];
+     [tabBarController addChildViewController:vc02];
+    
+    UIViewController *vc03 = [[UIViewController alloc]init];
+    vc03.tabBarItem.title=@"关注";
+    vc03.tabBarItem.image=[UIImage imageNamed:@"tabBar_friendTrends_icon"];
+    vc03.tabBarItem.selectedImage=[UIImage imageNamed:@"tabBar_friendTrends_click_icon"];
+    vc03.view.backgroundColor=[UIColor greenColor];
+//    [vc03.tabBarController addChildViewController:vc03];
+     [tabBarController addChildViewController:vc03];
+    
+    UIViewController *vc04 = [[UIViewController alloc]init];
+    vc04.tabBarItem.title=@"我";
+    vc04.tabBarItem.image=[UIImage imageNamed:@"tabBar_me_icon"];
+    vc04.tabBarItem.selectedImage=[UIImage imageNamed:@"tabBar_me_click_icon"];
+    vc04.view.backgroundColor=[UIColor blueColor];
+//    [vc04.tabBarController addChildViewController:vc04];
+     [tabBarController addChildViewController:vc04];
+    
+    self.window.rootViewController= tabBarController;
+    
     
     // 显示窗口
     [self.window makeKeyAndVisible];
